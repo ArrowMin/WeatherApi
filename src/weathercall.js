@@ -14,6 +14,7 @@ export function createWeatherObject(weatherJsonObject) {
   return {
     currentTemp: weatherJsonObject.currentConditions.temp,
     currentTime: weatherJsonObject.currentConditions.datetime,
+    resolvedAddress: weatherJsonObject.resolvedAddress,
     todayMax: weatherJsonObject.days[0].tempmax,
     todayMin: weatherJsonObject.days[0].tempmin,
   };
